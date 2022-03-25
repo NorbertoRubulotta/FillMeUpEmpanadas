@@ -1,0 +1,327 @@
+/*imports*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+/* Variables */
+
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --color-primary: #2E282A;
+  --color-secondary: #FFAD05;
+  --color-3: #F3F3F4;
+  --color-4: #808080;
+  --color-button: #3AAFB9;
+  --titles-lg: 6em;
+  --text-md: 1.8em; 
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Helpers*/
+.texto_descriptivo {
+  color: var(--color-secondary);
+  font-size: 2em;
+}
+
+.flex-row {
+  display: flex;
+}
+.grid-img-text{
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  justify-content: space-between;
+  align-content: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 108rem;
+  margin: 0 auto;
+}
+.divisor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*Globals*/
+html {
+  font-size: 62.5%;
+  font-family: var(--font-primary);
+  background-color: black;
+  
+}
+ul{
+  list-style-type: none;
+}
+/*p {
+  font-size: 2em;
+}*/
+img {
+width: 100%;
+height: auto;
+}
+a {
+  font-size: 1.6em;
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1{
+  font-size: var(--titles-lg);
+}
+/*
+.contenedor-home{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 25vh auto auto auto auto auto auto 30vh;
+  grid-template-areas: 
+  "header header"
+  "main1 main1"
+  "divisor divisor"
+  "empanadas desc-emp"
+  "main3 main3"
+  "main4 main4"
+  "presu presu"
+  "footer footer";
+}*/
+.contenedor-principal{
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+/* Header Styles */
+header {
+  background-color: black;
+  grid-area: header;
+  }
+
+header .navbar {
+  min-height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+header .logo {
+  flex-basis: 13%;
+  padding-top: 1rem;
+}
+header .menu {
+  flex-basis: 40%;
+  justify-content: space-between;
+}
+
+header .menu__link{
+  color: var(--color-secondary);
+padding: 0.7rem;
+}
+
+.offer a{
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+
+/*styles main Index*/
+
+.firstMain {
+  background-image: url(../img/foodTruckBackground.jfif);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #272020;
+  grid-area: main1;
+  width: 100%;
+}
+
+.firstMain article {
+  font-weight: bold;
+  color: #d4c008;
+}
+.firstMain article h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*.firstMain article div {
+  margin-left: 80%;
+  padding: 20px;
+}*/
+.divisor{
+grid-area: divisor;
+
+}
+.divisor p{
+  color: var(--color-secondary);
+}
+
+.second-main {
+  background-color: black;
+  color: var(--color-secondary);
+  height: 91vh;
+ 
+}
+/*
+.second-main__img{
+  padding-top: 10rem;
+  padding-left: 5rem;
+  min-width: 40%;
+  grid-area:empanadas;
+}
+
+.second-main__desc{
+  padding-top: 10rem;
+  text-align: center;
+  font-size: 3em;
+  grid-area: desc-emp;
+}
+.second-main__desc p{
+  padding: 1rem 18rem;
+  font-size: 0.5em;
+}
+*/
+
+
+
+.thirdMain {
+  background-color: var(--color-secondary);
+  height: 50vh;
+  padding: 3rem;
+  grid-area: main3;
+  font-size: 2.5em;
+ 
+}
+.fourthMain {
+  background-color: black;
+  height: 50vh;
+  color: white;
+  grid-area: main4;
+}
+.reviews {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+  "titulo titulo titulo"
+  "p1 p2 p3";
+  justify-content: space-around;
+}
+.reviews h3{
+  grid-area: titulo;
+  text-align: center;
+  font-size: 3em;
+}
+.reviews__1{
+grid-area: p1;
+font-size: 2em;
+}
+.reviews__2{
+  grid-area: p2;
+  font-size: 2em;
+}
+.reviews__3{
+  grid-area: p3;
+  font-size: 2em;
+}
+/*Menu*/
+.main-menu {
+  background-color: gray;
+
+  color: white;
+}
+.main-menu__titulo {
+  font-size: 3em;
+}
+
+/*Contacto*/
+
+/* Solicita Presupuesto*/
+.form{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form input {
+width: 90%;
+height: 40px;
+margin: 0.5rem;
+}
+
+.contacto {
+  background-color: var(--color-secondary);
+  height: 100vh;
+  text-align: center;
+}
+.contacto div h3{
+  font-size: var(--titles-lg);
+  color: black;
+}
+
+
+/* About us */
+.contenedor-about{
+  width: 80%;
+}
+.about-us{
+  color: aliceblue;
+  text-align: center;
+  
+}
+.about-us__history{
+  height: 80vh;
+
+}
+.about-us__history img{
+  width: 80%;
+  height: auto;
+  padding-left: 5rem;
+}
+.us-desc{
+  font-size: 1em;
+}
+.about-us__bio{
+  height: 50vh;
+  padding: 5rem 2rem;
+}
+.about-us__alergies{
+  height: 50vh;
+}
+.about-us__plug{
+  height: 50vh;
+}
+
+
+
+
+/* Footer */
+.footer{
+height: 25vh;
+padding: 2rem;
+align-items: center;
+color: aliceblue;
+grid-area: footer;
+}
+.footer__rights{
+  color: aliceblue;
+  font-size: 0.7em;
+}
+@media screen and (max-width: 720px) {
+
+@media screen and (max-width: 480px) {
