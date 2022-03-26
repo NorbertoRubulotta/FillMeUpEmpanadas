@@ -259,7 +259,63 @@ header .logo {
   color: var(--color-3);
   text-align: center;
 }
+/*FAQ's*/
+body{
+  background-color: black;
+}
+.fs-1, .fs-2, .btn-primary{
+  margin: 2rem auto;
+}
+.faqs{
+  font: var(--font-primary);
+  font-size: 1.5em;
+}
+.accordion-button {
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  border: none;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+.accordion-body {
+  background-color: var(--color-primary);
+}
+.accordion-item{
+  background-color: black;
+}
+form{
+  font-family: var(--font-primary);
+}
+.form-control{
+  height: 1.8em;
+  font-size: 1.5rem;
+}
+.form-control textarea{
+}
+textarea.form-control {
+  min-height: calc(3.5em + 10.75rem + -3px);
+}
+.input-group-text{
+  background-color: var(--color-4);
+  color: var(--color-3);
+}
 
+/*Menu*/
+
+.main-menu__titulo{
+  margin: 2.5rem auto;
+}
+.card{
+  background-color: var(--color-4);
+}
+.card-body{
+  color: var(--color-3);
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+}
 @media screen and (min-width: 480px) {
   /* Variables */
 
