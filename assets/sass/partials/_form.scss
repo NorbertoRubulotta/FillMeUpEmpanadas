@@ -1,0 +1,29 @@
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    min-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-3;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.753);
+    padding: 1rem;
+    input {
+        width: 90%;
+        height: 3rem;
+        margin: 0.5rem;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+      }
+    textarea {
+        width: 90%;
+        max-width: 600px;
+        height: 120px;
+      }
+  }

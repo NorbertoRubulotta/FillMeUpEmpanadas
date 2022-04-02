@@ -1,0 +1,45 @@
+.fs-1,
+.fs-2,
+.btn-primary {
+  margin: 2rem auto;
+}
+.faqs {
+    font: $font-primary;
+    font-size: 1.5em;
+  }
+
+.accordion-button {
+    font-size: 1.5rem;
+    background-color: $color-4;
+    color: white;
+    border: none;
+    &:focus{
+        box-shadow: none;
+    }
+    &:not(.collapsed) {
+        color: $color-primary;
+        background-color: $color-secondary;
+      }
+    
+  }
+  .accordion-body {
+    background-color: $color-3;
+    border: none;
+  }
+  
+  .accordion-item {
+    background-color: black;
+    border: none;
+  }
+  .form-control {
+    height: 1.8em;
+    font-size: 1.5rem;
+  }
+  textarea.form-control {
+    min-height: calc(3.5em + 10.75rem + -3px);
+  }
+  
+  .input-group-text {
+    background-color: $color-4;
+    color: $color-3;
+  }

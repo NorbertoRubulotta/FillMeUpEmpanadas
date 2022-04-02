@@ -1,0 +1,16 @@
+/*Menu*/
+/*background-image: linear-gradient(180deg, #e4e4e4 80%, #fff 0); para aplicar despues a los items*/
+.main-menu {
+    &__titulo{
+        margin: 2.5rem auto;
+    }
+    .card {
+        background-color: $color-4;
+      }
+  }
+.card-body {
+    color: $color-3;
+    font-size: 1.5rem;
+    font-family: $font-primary;
+  }
+  

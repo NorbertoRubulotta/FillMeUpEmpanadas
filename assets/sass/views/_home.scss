@@ -1,0 +1,63 @@
+.home {
+    background-color: $color-3;
+    background-image: $background-home;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 40rem;
+    color: $color-3;
+    font-size: $text-lt;
+    article p {
+        color: $color-3;
+      }
+  }
+  .second-home,
+  .fifth-home {
+    background-color: $color-3;
+    color: $color-secondary;
+    font-size: $text-lt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h2 {
+        font-size: $text-md;
+      }
+  }
+  .third-home {
+    background-color: $color-3;
+    margin: 16px 0;
+    color: $color-text;
+    font-size: $text-lt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    p {
+        padding: 3rem;
+      }
+  }
+  .fourth-home {
+    font-size: $text-lt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 16px 0;
+    height: 60vh;
+  }
+  .presupuesto {
+    background-color: $color-3;
+    text-align: center;
+    h3 {
+        font-size: $titles-md;
+      }
+  }

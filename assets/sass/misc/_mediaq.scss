@@ -1,0 +1,58 @@
+@media screen and (min-width: 480px) {
+    /* Variables */
+      $titles-md: 5em;
+      $text-lt: 1.4em;
+  
+    .menu__link {
+      font-size: 1.5rem;
+    }
+  
+    .us-img img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    /* Variables */
+
+    $titles-md: 6em;
+    $text-lt: 1.8em;
+
+    .home {
+      height: 60rem;
+      h1 {
+        font-size: $titles-lg;
+      }
+    }
+    .second-home,
+    .fifth-home {
+      display: grid;
+      grid-template-columns: repeat(2, 48%);
+      justify-content: space-between;
+      align-content: center;
+    }
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(3, 30%);
+      justify-content: space-between;
+      align-content: center;
+    }
+    .us-img {
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+    }
+    .about-us__history {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-content: space-evenly;
+      align-content: center;
+      p {
+        text-align: left;
+      }
+    }
+  }
