@@ -144,6 +144,8 @@ form {
   .footer h4 {
     font-size: 1.5em;
     font-weight: bold; }
+  .footer p {
+    color: #fff; }
 
 .form {
   width: 100%;
@@ -240,6 +242,9 @@ form {
 .main-menu .card {
   background-color: #adadad; }
 
+.card-text {
+  font-size: 1.5rem; }
+
 .card-body {
   color: #fff;
   font-size: 1.5rem;
@@ -291,7 +296,16 @@ textarea.form-control {
 
 /*Media Queries*/
 @media screen and (min-width: 480px) {
-  /* Variables */
+  p {
+    font-size: 1.4em; }
+  h1 {
+    font-size: 5em; }
+  h2 {
+    font-size: 3.5em; }
+  h3 {
+    font-size: 3em; }
+  .footer h4 {
+    font-size: 1.8em; }
   .menu__link {
     font-size: 1.5rem; }
   .us-img img {
@@ -299,18 +313,42 @@ textarea.form-control {
     max-width: 400px;
     height: auto; } }
 
+@media screen and (min-width: 720px) {
+  p {
+    font-size: 1.6em; }
+  h1 {
+    font-size: 5.5em; }
+  h2 {
+    font-size: 3.8em; }
+  h3 {
+    font-size: 3.3em; }
+  .footer h4 {
+    font-size: 1.9em; }
+  .home {
+    height: 60rem; } }
+
 @media screen and (min-width: 1024px) {
-  /* Variables */
+  p {
+    font-size: 1.8em; }
+  h1 {
+    font-size: 6em; }
+  h2 {
+    font-size: 4em; }
+  h3 {
+    font-size: 3.5em; }
+  .footer h4 {
+    font-size: 2em; }
   .home {
     height: 60rem; }
-    .home h1 {
-      font-size: 5em; }
   .second-home,
   .fifth-home {
     display: grid;
     grid-template-columns: repeat(2, 48%);
     justify-content: space-between;
     align-content: center; }
+  .second-home h2,
+  .fifth-home h2 {
+    font-size: 3.5em; }
   .reviews {
     display: grid;
     grid-template-columns: repeat(3, 30%);
