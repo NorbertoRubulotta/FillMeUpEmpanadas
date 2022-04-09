@@ -2,6 +2,7 @@
 .btn {
     border-radius: 0.5rem;
     padding: 1rem;
+    margin: 1rem auto;
     display: inline;
     width: 120px;
     font-weight: bold;
@@ -10,8 +11,8 @@
     color: $color-secondary;
     background-color: transparent;
     font-size: 1.3rem;
-    border: solid;
-    border-color: $color-secondary;
+    /* border: solid;*/
+    border-color: transparent; 
     transition: border-color 400ms ease, background-color 400ms ease,
       color 400ms ease;
       &:hover {
@@ -27,24 +28,10 @@
     margin-right: auto;
     max-width: $max-width;
   }
-  .flex-row {
-    display: flex;
-  }
-  .flex-column {
-    display: flex;
-    flex-direction: column;
-  }
-  .divisor {
-    font-size: $text-lt;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 25%;
-    margin: 1.6rem 0;
-    p {
-        padding: 1rem;
-      }
+  @mixin flex ($display: flex, $direction: row, $justify: center, $align: center, $text-a: center){
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $text-a;
   }

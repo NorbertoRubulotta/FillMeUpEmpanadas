@@ -34,12 +34,15 @@ html {
   }
   
   h1 {
-    margin: 0;
+    margin: 2rem auto;
     font-size: $text-md;
+  }
+  h2{
+    margin: 1.7rem auto;
   }
   
   h3 {
-    margin: 0;
+    margin: 2rem auto;
     font-size: 3em;
   }
   

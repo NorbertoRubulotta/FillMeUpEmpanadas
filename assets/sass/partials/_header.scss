@@ -11,8 +11,12 @@
       }
       .logo {
         flex-basis: $header-height;
-        animation: rodante 700ms ease-in-out;
+       /* animation: rodante 700ms ease-in-out;*/
+        margin-top: 3px;
       }
+  }
+  .menu{
+    @include flex()
   }
   .menu__link {
     padding: 1rem;

@@ -3,3 +3,6 @@
     text-align: center;
     font-size: $titles-lg;
   }
+  .about-us__history, .about-us__bio, .about-us__alergies, .about-us__plug, .about-us__presupuesto{
+    @include flex($direction: column);
+  }

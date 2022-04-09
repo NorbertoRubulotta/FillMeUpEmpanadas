@@ -2,9 +2,8 @@
 
 @media screen and (min-width: 480px) {
   p {
-    font-size: 1.4em;
+     font-size: map-get($p-sizes, sc-md)
   }
-  
   h1 {
     font-size: 5em;
   }
@@ -18,7 +17,7 @@
     font-size: 1.8em;
     }
 .menu__link {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   
 .us-img img {
@@ -29,7 +28,7 @@
   }
   @media screen and (min-width: 720px) {
     p {
-      font-size: 1.6em;
+      font-size: map-get($p-sizes, sc-lg)
     }
     
     h1 {
@@ -47,10 +46,13 @@
       .home {
         height: 60rem;
       } 
+      .menu__link {
+        font-size: 1.5rem;
+      }
     }
   @media screen and (min-width: 1024px) {
     p {
-      font-size: 1.8em;
+      font-size: map-get($p-sizes, sc-xl)
     }
     
     h1 {
@@ -72,7 +74,7 @@
     .fifth-home {
       display: grid;
       grid-template-columns: repeat(2, 48%);
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-content: center;
     }
     .second-home,
@@ -84,7 +86,7 @@
     .reviews {
       display: grid;
       grid-template-columns: repeat(3, 30%);
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-content: center;
     }
     .us-img {
@@ -102,5 +104,10 @@
       p {
         text-align: left;
       }
+    }
+    @media screen and (min-width: 1480px) {
+      .home {
+        height: 85rem;
+      } 
     }
   }
