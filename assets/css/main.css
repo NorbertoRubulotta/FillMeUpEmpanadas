@@ -62,12 +62,14 @@ form {
   font-size: 1.3rem;
   border: solid;
   border-color: #ffad05;
-  transition: border-color 400ms ease, background-color 400ms ease, color 400ms ease; }
+  transition: border-color 400ms ease, background-color 400ms ease,
+ color 400ms ease; }
   .btn:hover {
     color: #000000;
     background-color: #ffad05;
     cursor: pointer;
-    transition: border-color 400ms ease, background-color 400ms ease, color 400ms ease; }
+    transition: border-color 400ms ease, background-color 400ms ease,
+ color 400ms ease; }
 
 .container {
   margin-left: auto;
