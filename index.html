@@ -18,9 +18,9 @@
 <body>
     <!-- Inicio del header -->
     <header class="header">
-        <nav class="navbar container">
+        <nav class="navbar container-lg">
             <div class="logo">
-                <a href="index.html"><img src="assets/img/logo2.svg" alt="Logo empresa" /></a>
+                <a href="index.html"><img src="assets/img/logo2.svg" alt="Fill Me Up! EMPANADAS Logo" /></a>
             </div>
             <ul class="menu">
                 <li class="menu__item">
@@ -36,7 +36,7 @@
                     <a href="assets/views/faq.html" class="menu__link">FAQ</a>
                 </li>
                 <li class="menu__item offer">
-                    <a href="assets/views/presupuesto.html" class="menu__link">Get an offer</a>
+                    <a href="#quote" class="menu__link">Get an offer</a>
                 </li>
             </ul>
         </nav>
@@ -46,7 +46,7 @@
     <!-- Inicio main -->
     <main>
         <section class="home">
-            <article class="container">
+            <article class="container-lg">
                 <h1>RENT A FOOD TRUCK</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
@@ -71,7 +71,7 @@
         </div>
         <section class="second-home">
             <div class="second-home__img">
-                <img src="assets/img/home-img.jpg" alt="Image of two deep fried empanadas" />
+                <img src="assets/img/home-img.jpg" alt="Image of two deep fried empanadas making a circle" />
             </div>
             <div class="second-home__desc">
                 <h2>OUR EMPANADAS</h2>
@@ -85,7 +85,7 @@
                     three different empanadas and we can also serve lactose -free and
                     vegan empanadas.
                 </p>
-                <a href="assets/views/menu.html"><button class="btn_menu">Nuestro Menú</button>
+                <a href="assets/views/menu.html"><button class="btn_menu">Our Menu</button>
                 </a>
             </div>
         </section>
@@ -115,45 +115,32 @@
                 </p>
             </article>
         </section>
-        <section class="fourth-home">
-            <h2>OUR REVIEWS</h2>
-            <div>
-                <p>people who have trusted in us</p>
-            </div>
+        <section class="fourth-home" id="reviews-home">
             <div class="reviews">
                 <div class="reviews__card">
                     <p class="reviews__name">Ann-marie S.</p>
                     <p class="reviews__stars">★★★★★</p>
                     <p>
-                        "empanadas empanadas empanadas empanadas empanadas empanadas
-                        empanadas empanadas empanadas empanadas empanadas empanadas
-                        empanadas empanadas empanadas empanadas empanadas empanadas
-                        empanadas empanadas empanadas empanadas empanadas empanadas""
+                        "Super good food and a world class experience for my guests. I had a backyard food truck for my birthday party :) Everything from ordering the food truck to packing and driving was a neat and super easy process. I am very satisfied! "
                     </p>
                 </div>
                 <div class="reviews__card">
                     <p class="reviews__name">Marianne J.</p>
                     <p class="reviews__stars">★★★★★</p>
                     <p>
-                        "empanadas empanadas empanadas empanadas empanadas empanadas
-                        empanadas empanadas empanadas empanadas empanadas
-                        empanadasempanadas empanadas empanadas empanadas empanadas
-                        empanadas empanadas empanadas empanadas empanadas empanadas
-                        empanadas empanadas empanadas empanadas empanadas empanadas
-                        empanadas empanadas empanadas empanadas empanadas empanadas
-                        empanadas""
+                        "We hire Fill Me Up! EMPANADAS for an event with 70 diners for a Friday bar which was to be held at our cocktail bar.
+                        They arrived 1.5 hours before and made everything ready out in front of our location.
+                        The food and service were top notch!
+                        Can definitely be recommended."
                     </p>
                 </div>
                 <div class="reviews__card">
                     <p class="reviews__name">Nicklas K.</p>
                     <p class="reviews__stars">★★★★★</p>
                     <p>
-                        "empanadas empanadas empanadas empanadas empanadas empanadas
-                        empanadas empanadas empanadas empanadas empanadas empanadas
-                        empanadas empanadas empanadas empanadas empanadas empanadas
-                        empanadas empanadas empanadas empanadas empanadas empanadas
-                        empanadas empanadas empanadas empanadas empanadas empanadas
-                        empanadas empanadas"empanadas empanadas empanadas empanadas"
+                        "We booked the food truck for our party for 60 people, where we had a number of requirements such as that part of the food should be vegan, gluten-free and lactose-free.
+                        All requirements were met and the food was nicely kept separate from each other.
+                        Highly recommended."
                     </p>
                 </div>
             </div>
@@ -176,22 +163,27 @@
                 <img src="assets/img/plug.webp" alt="photo of many empanadas and a hand closing a empanadas box" />
             </div>
         </section>
-        <section class="presupuesto">
+        <section class="presupuesto" id="quote">
             <div>
-                <h3>Presupuesto</h3>
+                <h3>RENT A FOOD TRUCK</h3>
+                <div class="line"></div>
+                <p>Fill out the form and get a quote sent within 10 minutes.</p>
+                
             </div>
-            <div>
+            <div class="formdiv">
                 <form action="" method="post" class="form">
-                    <input type="text" name="Nombre" placeholder="Ingresa tu nombre" /><br />
-                    <input type="email" name="email" placeholder="Ingresa tu email" id="" /><br />
-                    <input type="number" name="telefono" placeholder="Ingresa tu número de teléfono" id="" /><br />
-                    <input type="number" name="personas" placeholder="Ingresa la cantidad de personas" id="" /><br />
+                    <input type="text" name="Name" placeholder="Enter your name" />
+                    <input type="email" name="Email" placeholder="Your Email" id="" />
+                    <input type="number" name="Telephone" placeholder="Telephone number" id="" />
+                    <input type="number" name="People" placeholder="How many people" id="" />
+                    <input type="text" name="Address" placeholder="Event address" id="" />
+                    <input type="date" id="start" name="trip-start" value="" min="2022-01-01" max="2024-12-31">
 
-                    <textarea name="informacion"
-                        placeholder="Ingresa  la fecha, el lugar del evento y otra información que creas que deberiamos saber."
-                        id=""></textarea><br />
+                    <textarea name="information"
+                        placeholder="Anything else that we should know?"
+                        id=""></textarea>
 
-                    <button type="submit" class="btn_send">Enviar</button>
+                    <button type="submit" class="btn_send">Send</button>
                 </form>
             </div>
         </section>

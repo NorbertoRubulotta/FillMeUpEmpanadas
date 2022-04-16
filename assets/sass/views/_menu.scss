@@ -1,19 +1,29 @@
-/*Menu*/
-/*background-image: linear-gradient(180deg, #e4e4e4 80%, #fff 0); para aplicar despues a los items*/
-.main-menu {
-    &__titulo{
-        margin: 2.5rem auto;
+  .main-menu__tittle{
+p{
+  margin: 4rem;
+  font-size: map-get($p-sizes, sc-xl);
+}
+  }
+  .menu-list{
+    @include flex($direction: column);
+    &__item{
+      /* background-image: linear-gradient(180deg, #e4e4e4 80%, #fff 0); */
+      max-width: 90%;
+      margin: 4rem;
     }
-    .card {
-        background-color: $color-4;
+    &__photo {
+      max-width: 500px;
+    }
+    &__desc{
+      @include flex($direction: column, $justify: flex-start);
+      h4{
+        font-size: 2.5em;
+        margin-top: 2rem;
       }
-  }
-  .card-text{
-    font-size: 1.5rem;
-  }
-.card-body {
-    color: $color-3;
-    font-size: 1.5rem;
-    font-family: $font-primary;
+      p{
+        font-style: italic;
+        font-weight: 500;
+      }
+    }
   }
   

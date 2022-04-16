@@ -20,9 +20,9 @@
     width: 100%;
     height: 25%;
     margin: 1.6rem 0;
-    p {
+  /*   p {
         padding: 1rem;
-      }
+      } */
     }
   .second-home,
   .fifth-home {
@@ -32,7 +32,7 @@
     @include flex($direction: column);
     .btn_menu {
       @extend .btn;
-      border-bottom: 1px solid $color-secondary;
+      text-transform: uppercase;
     }
     h2 {
         font-size: $text-md;
@@ -45,7 +45,7 @@
     font-size: $text-lt;
     @include flex($direction: column);
     p {
-        padding: 3rem;
+        padding: 2rem;
       }
   }
   .fourth-home {
@@ -66,15 +66,32 @@
       color: white;
       border-top-left-radius: .8rem;
       border-top-right-radius: .8rem;
+      text-align: center;
     }
     &__stars{
       color: orange;
+      text-align: center;
     }
   }
   .presupuesto {
-    background-color: $color-3;
-    text-align: center;
+    @include flex($direction: column);
+    background-color: black;
     margin: 2rem auto;
+    margin-bottom: 0;
+    padding: 5rem;
+    color: #fff;
+    p{
+      color: #fff;
+      margin: 4rem;
+      font-size: 2em;
+    }
+    .line {
+        height: 2px;
+        min-width: 222px;
+        margin-top: 47px;
+        margin-bottom: 37px;
+        background-color: #fff;
+    }
     .btn_send{
       @extend .btn;
       background-color: $color-primary;

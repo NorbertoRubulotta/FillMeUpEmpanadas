@@ -7,17 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Here you can see frequently asked questions about our food truck, serving and a lot more!">
   <meta name="keywords" content="RENT A FOOD TRUCK, FOODTRUCK, CATERINGS, EMPANADAS, ARGENINEAN FOOD">
-  <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../img/logo2.svg" type="image/x-icon" />
   <link rel="stylesheet" href="../css/main.css" />
-  <title>FAQs | Fill Me Up! Empanadas - Answers for all your questions</title>>
+  <title>FAQs | Fill Me Up! Empanadas - Answers for all your questions</title>
 </head>
 
 <body>
   <!-- Inicio del header -->
   <header class="header">
-    <nav class="navbar container">
+    <nav class="navbar container-lg">
       <div class="logo">
         <a href="../../index.html"><img src="../img/logo2.svg" alt="Logo empresa" /></a>
       </div>
@@ -35,7 +33,7 @@
           <a href="faq.html" class="menu__link">FAQ</a>
         </li>
         <li class="menu__item offer">
-          <a href="presupuesto.html" class="menu__link">Get an offer</a>
+          <a href="#quote" class="menu__link">Get an offer</a>
         </li>
       </ul>
     </nav>
@@ -43,96 +41,77 @@
   <!-- Fin del header -->
   <!-- Inicio main -->
   <main>
-    <!--  <section class="contacto divisor">
-                <h1>Contacto</h1>
-            <div>
-                <form action="">
-                    <input type="text" name="nombre" placeholder="Ingresa tu nombre" id="nombre"><br>
-                    <input type="email" name="email" placeholder="Ingresa tu email" id="email"><br>
-                    <input type="number" name="telefono" placeholder="Ingresa tu número de teléfono" id="telefono"><br>
-                    <label for="comentarios">Ingresa tu comentario</label><br>
-                    <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea><br>
-                    <button type="submit"> Enviar </button>
-                    <button type="reset"> Limpiar </button>
-                </form>
-            </div>
-        </section> -->
-    <section class="divisor faqs">
-      <h1 class="fs-1">Preguntas Frecuentes</h1>
-      <div class="accordion col-sm-12 col-md-5" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-              PREGUNTA 1
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              PREGUNTA 2
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              PREGUNTA 3
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="faqs container-md">
+      <h1>FREQUENTLY ASKED QUESTIONS</h1>
+      <h3>Menu</h3>
+      <div class="secacord">
+          <details>
+            <summary>- What kind of food do you serve?</summary>
+            <p>We serve five different empanadas from our food truck, which you can read more about <a href="menu.html">here</a> . You can find reviews of the experience and the food <a href="../../index.html#reviews-home">here</a>.</p>
+          </details>
+          <details>
+            <summary>- How fast and how does the serving take place?</summary>
+            <p>
+              All the guests at your event will receive a plate with the three different empanadas of their choise. At an event of 50 people, everyone typically got the first round within 30 minutes. Afterwards, guests can come up and get more empanadas until they are full.
+            </p>
+          </details>
+          <details>
+            <summary>- Do you have vegetarian and vegan alternatives? </summary>
+            <p>Yes! Three of our empanadas are vegetarian and they can also be served vegan. </p>
+          </details>
+      
+        <h3>Service</h3>
+      
+          <details>
+            <summary>- Is there anything I need to prepare?</summary>
+            <p>
+              The only thing you need to prepare before we arrive is that our food truck has access to a standard power plug within 30 meters. Other than that, all you have to do is enjoy your event.</p>
+          </details>
+          <details>
+            <summary>- Do I have to provide cutlery and plates?</summary>
+            <p>
+              No. We have everything we need so you do not have to worry about it.
+            </p>
+          </details>
+          <details>
+            <summary>- What is the size of your food truck?</summary>
+            <p>Our food trucks are 3.4m long , 2.4m high and 1.55m wide .</p>
+          </details>
+          <details>
+            <summary>- When do you arrive in?
+            </summary>
+            <p>We arrive no later than 30 minutes before the agreed serving time. Sometimes we set up the food truck a few hours before to make it fit with the rest of the logistics for our other food trucks.</p>
+          </details>
+          <details>
+            <summary>- How long will you stay?</summary>
+            <p>
+              Our food truck basically serves out with you for 1.5 hours for smaller events. If you have a larger event or a type of event that requires longer serving, we can arrange this in more detail. Feel free to fill out the form on this page with your wishes.</p>
+          </details>
+    </div>
+  </section>
+    <section class="presupuesto" id="quote">
       <div>
-        <h2 class="fs-2">Te quedaste con alguna duda? Escribenos!!</h2>
+          <h3>RENT A FOOD TRUCK</h3>
+          <div class="line"></div>
+          <p>Fill out the form and get a quote sent within 10 minutes.</p>
+          
       </div>
-      <form class="col-5">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="input-group input-group-lg">
-          <span class="input-group-text">Deja aqui tu comentario</span>
-          <textarea class="form-control" aria-label="With textarea"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-      </form>
+      <div class="formdiv">
+          <form action="" method="post" class="form">
+              <input type="text" name="Name" placeholder="Enter your name" />
+              <input type="email" name="Email" placeholder="Your Email" id="" />
+              <input type="number" name="Telephone" placeholder="Telephone number" id="" />
+              <input type="number" name="People" placeholder="How many people" id="" />
+              <input type="text" name="Address" placeholder="Event address" id="" />
+              <input type="date" id="start" name="event-date" value="" min="2022-01-01" max="2024-12-31">
+
+              <textarea name="information"
+                  placeholder="Anything else that we should know?"
+                  id=""></textarea>
+
+              <button type="submit" class="btn_send">Send</button>
+          </form>
       </div>
-    </section>
   </main>
   <!-- Fin main -->
   <!-- Inicio Footer -->
@@ -150,9 +129,6 @@
     </div>
   </footer>
   <!-- Fin footer -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
 </body>
 
 </html>

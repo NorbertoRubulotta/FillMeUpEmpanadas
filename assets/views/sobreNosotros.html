@@ -15,7 +15,7 @@
 <body>
     <!-- Inicio del header -->
     <header class="header">
-        <nav class="navbar container">
+        <nav class="navbar container-lg">
             <div class="logo">
                 <a href="../../index.html"><img src="../img/logo2.svg" alt="Logo empresa" /></a>
             </div>
@@ -24,17 +24,18 @@
                 <li class="menu__item"> <a href="menu.html" class="menu__link">Menu</a></li>
                 <li class="menu__item"><a href="sobreNosotros.html" class="menu__link">About us</a></li>
                 <li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
-                <li class="menu__item offer"> <a href="presupuesto.html" class="menu__link">Get an offer</a></li>
+                <li class="menu__item offer"> <a href="#quote" class="menu__link">Get an offer</a></li>
             </ul>
         </nav>
     </header>
     <!-- Fin del header -->
 
     <!-- Inicio main -->
-    <main class="container">
+    <main>
+        <div class="container-lg">
         <h1 class="about-us__title">Nuestra Historia</h1>
         <div class="about-us__history">
-            <picture class="us-img"><img src="../img/hands2.jpg" alt="Foto de manos con harina"></picture>
+            <picture class="us-img"><img src="../img/hands_edited.jpg" alt=""></picture>
             <div class="us-desc">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe eveniet molestiae quibusdam sequi,
                     aperiam nesciunt soluta consequatur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
@@ -49,7 +50,7 @@
             </div>
         </div>
         <div class="about-us__bio">
-            <img src="../img/earth2.jpg" alt="">
+            <img src="../img/earth2.jpg" alt="picture of a poster saying planet earth first">
             <h2>SUSTAINABILITY IN OUR FOOD TRUCKS</h2>
             <p>
                 Since we started serving delicious food from our food truck, we have focused on reducing our CO2
@@ -62,7 +63,7 @@
                 constantly working on how we can use as few animal products as possible to reduce our CO2 footprint.</p>
         </div>
         <div class="about-us__alergies">
-            <img src="../img/empanada.jpg" alt="">
+            <img src="../img/alergens.jpg" alt="photo of non cooked empanadas on a table">
             <h2>ALLERGENS & DIETS</h2>
             <p>
                 Our menu is composed in a way that everyone can eat with. Three options in our menu are vegetarian and
@@ -76,22 +77,28 @@
                 cupiditate corporis, cum assumenda quae laborum cumque rerum? Aspernatur deserunt ullam rerum mollitia
                 aliquam animi.</p>
         </div>
-        <section class="about-us__presupuesto">
+    </div>
+        <section class="presupuesto" id="quote">
             <div>
-                <h3>Presupuesto</h3>
+                <h3>RENT A FOOD TRUCK</h3>
+                <div class="line"></div>
+                <p>Fill out the form and get a quote sent within 10 minutes.</p>
+                
             </div>
-            <div>
+            <div class="formdiv">
                 <form action="" method="post" class="form">
-                    <input type="text" name="Nombre" placeholder="Ingresa tu nombre" /><br />
-                    <input type="email" name="email" placeholder="Ingresa tu email" id="" /><br />
-                    <input type="number" name="telefono" placeholder="Ingresa tu número de teléfono" id="" /><br />
-                    <input type="number" name="personas" placeholder="Ingresa la cantidad de personas" id="" /><br />
+                    <input type="text" name="Name" placeholder="Enter your name" />
+                    <input type="email" name="Email" placeholder="Your Email" id="" />
+                    <input type="number" name="Telephone" placeholder="Telephone number" id="" />
+                    <input type="number" name="People" placeholder="How many people" id="" />
+                    <input type="text" name="Address" placeholder="Event address" id="" />
+                    <input type="date" id="start" name="trip-start" value="" min="2022-01-01" max="2024-12-31">
 
-                    <textarea name="informacion"
-                        placeholder="Ingresa  la fecha, el lugar del evento y otra información que creas que deberiamos saber."
-                        id="" cols="30" rows="10"></textarea><br />
+                    <textarea name="information"
+                        placeholder="Anything else that we should know?"
+                        id=""></textarea>
 
-                    <button type="submit" class="btn">Enviar</button>
+                    <button type="submit" class="btn_send">Send</button>
                 </form>
             </div>
         </section>

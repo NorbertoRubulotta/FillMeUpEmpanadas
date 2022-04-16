@@ -31,23 +31,29 @@ html {
   
   p {
     color: $color-text;
+    text-align: justify;
+    padding: 1em;
   }
   
   h1 {
     margin: 2rem auto;
-    font-size: $text-md;
+    font-size: $titles-md;
+    text-align: center;
   }
   h2{
     margin: 1.7rem auto;
+    text-align: center;
   }
   
   h3 {
     margin: 2rem auto;
     font-size: 3em;
+    text-align: center;
   }
   
   h4 {
     font-weight: bold;
+    text-align: center;
   }
   body {
     margin: 0;
