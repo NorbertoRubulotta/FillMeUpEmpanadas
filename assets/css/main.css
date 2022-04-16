@@ -71,7 +71,6 @@ form {
   color: #ffad05;
   background-color: transparent;
   font-size: 1.3rem;
-  /* border: solid;*/
   border-color: transparent;
   transition: border-color 400ms ease, background-color 400ms ease, color 400ms ease; }
   .btn:hover, .second-home .btn_menu:hover,
@@ -130,7 +129,7 @@ form {
 
 .menu__link {
   margin: 1.5rem;
-  padding: .2rem;
+  padding: 0.2rem;
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
@@ -138,7 +137,7 @@ form {
   color: #ffad05;
   position: relative; }
   .menu__link::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 2px;
@@ -148,7 +147,7 @@ form {
     left: 0;
     transform-origin: right;
     transform: scaleX(0);
-    transition: transform .3s ease-in-out; }
+    transition: transform 0.3s ease-in-out; }
   .menu__link:hover::before {
     transform-origin: left;
     transform: scaleX(1); }
@@ -249,10 +248,7 @@ form {
   text-align: center;
   width: 100%;
   height: 25%;
-  margin: 1.6rem 0;
-  /*   p {
-        padding: 1rem;
-      } */ }
+  margin: 1.6rem 0; }
 
 .second-home,
 .fifth-home {
@@ -298,13 +294,13 @@ form {
   background-color: #fff;
   box-shadow: 1px 1px 5px 0;
   margin: 1rem;
-  border-radius: .8rem; }
+  border-radius: 0.8rem; }
 
 .reviews__name {
   background-color: black;
   color: white;
-  border-top-left-radius: .8rem;
-  border-top-right-radius: .8rem;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
   text-align: center; }
 
 .reviews__stars {
@@ -348,7 +344,6 @@ form {
   align-items: center;
   text-align: center; }
   .menu-list__item {
-    /* background-image: linear-gradient(180deg, #e4e4e4 80%, #fff 0); */
     max-width: 90%;
     margin: 4rem; }
   .menu-list__photo {
@@ -371,7 +366,11 @@ form {
   text-align: center;
   font-size: 5em; }
 
-.about-us__history, .about-us__bio, .about-us__alergies, .about-us__plug, .about-us__presupuesto {
+.about-us__history,
+.about-us__bio,
+.about-us__alergies,
+.about-us__plug,
+.about-us__presupuesto {
   display: flex;
   flex-direction: column;
   justify-content: center;

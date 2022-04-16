@@ -1,29 +1,27 @@
-  .main-menu__tittle{
-p{
-  margin: 4rem;
-  font-size: map-get($p-sizes, sc-xl);
+.main-menu__tittle {
+  p {
+    margin: 4rem;
+    font-size: map-get($p-sizes, sc-xl);
+  }
 }
+.menu-list {
+  @include flex($direction: column);
+  &__item {
+    max-width: 90%;
+    margin: 4rem;
   }
-  .menu-list{
-    @include flex($direction: column);
-    &__item{
-      /* background-image: linear-gradient(180deg, #e4e4e4 80%, #fff 0); */
-      max-width: 90%;
-      margin: 4rem;
+  &__photo {
+    max-width: 500px;
+  }
+  &__desc {
+    @include flex($direction: column, $justify: flex-start);
+    h4 {
+      font-size: 2.5em;
+      margin-top: 2rem;
     }
-    &__photo {
-      max-width: 500px;
-    }
-    &__desc{
-      @include flex($direction: column, $justify: flex-start);
-      h4{
-        font-size: 2.5em;
-        margin-top: 2rem;
-      }
-      p{
-        font-style: italic;
-        font-weight: 500;
-      }
+    p {
+      font-style: italic;
+      font-weight: 500;
     }
   }
-  
+}

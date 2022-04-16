@@ -9,57 +9,57 @@
 
 /*GLOBALS*/
 html {
-    font-size: 62.5%;
-   font-family: $font-primary;
-    background-color: $color-3;
-  }
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  a {
-    font-size: 1.6em;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  p {
-    color: $color-text;
-    text-align: justify;
-    padding: 1em;
-  }
-  
-  h1 {
-    margin: 2rem auto;
-    font-size: $titles-md;
-    text-align: center;
-  }
-  h2{
-    margin: 1.7rem auto;
-    text-align: center;
-  }
-  
-  h3 {
-    margin: 2rem auto;
-    font-size: 3em;
-    text-align: center;
-  }
-  
-  h4 {
-    font-weight: bold;
-    text-align: center;
-  }
-  body {
-    margin: 0;
-    overflow-x: 0;
-    background-color: $color-3;
-  }
-  form {
-    font-family: $font-primary;
-  }
+  font-size: 62.5%;
+  font-family: $font-primary;
+  background-color: $color-3;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  font-size: 1.6em;
+  text-decoration: none;
+  display: inline-block;
+}
+
+p {
+  color: $color-text;
+  text-align: justify;
+  padding: 1em;
+}
+
+h1 {
+  margin: 2rem auto;
+  font-size: $titles-md;
+  text-align: center;
+}
+h2 {
+  margin: 1.7rem auto;
+  text-align: center;
+}
+
+h3 {
+  margin: 2rem auto;
+  font-size: 3em;
+  text-align: center;
+}
+
+h4 {
+  font-weight: bold;
+  text-align: center;
+}
+body {
+  margin: 0;
+  overflow-x: 0;
+  background-color: $color-3;
+}
+form {
+  font-family: $font-primary;
+}

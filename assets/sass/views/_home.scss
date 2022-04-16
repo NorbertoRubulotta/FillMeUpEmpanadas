@@ -1,102 +1,99 @@
 .home {
-    background-color: $color-primary;
-    background-image: $background-home;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    @include flex($direction: column);
-    width: 100%;
-    height: 40rem;
+  background-color: $color-primary;
+  background-image: $background-home;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include flex($direction: column);
+  width: 100%;
+  height: 40rem;
+  color: $color-3;
+  font-size: $text-lt;
+  article p {
     color: $color-3;
-    font-size: $text-lt;
-    article p {
-        color: $color-3;
-      }
   }
-  .divisor {
-    font-size: $text-lt;
-    @include flex($direction: column);
-    width: 100%;
-    height: 25%;
-    margin: 1.6rem 0;
-  /*   p {
-        padding: 1rem;
-      } */
-    }
-  .second-home,
-  .fifth-home {
+}
+.divisor {
+  font-size: $text-lt;
+  @include flex($direction: column);
+  width: 100%;
+  height: 25%;
+  margin: 1.6rem 0;
+}
+.second-home,
+.fifth-home {
+  background-color: $color-3;
+  color: $color-secondary;
+  font-size: $text-lt;
+  @include flex($direction: column);
+  .btn_menu {
+    @extend .btn;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: $text-md;
+  }
+}
+.third-home {
+  background-color: $color-3;
+  margin: 16px 0;
+  color: $color-text;
+  font-size: $text-lt;
+  @include flex($direction: column);
+  p {
+    padding: 2rem;
+  }
+}
+.fourth-home {
+  background-color: rgb(250, 248, 248);
+  font-size: $text-lt;
+  @include flex($direction: column);
+  margin: 16px 0;
+}
+.reviews {
+  &__card {
     background-color: $color-3;
-    color: $color-secondary;
-    font-size: $text-lt;
-    @include flex($direction: column);
-    .btn_menu {
-      @extend .btn;
-      text-transform: uppercase;
-    }
-    h2 {
-        font-size: $text-md;
-      }
+    box-shadow: 1px 1px 5px 0;
+    margin: 1rem;
+    border-radius: 0.8rem;
   }
-  .third-home {
-    background-color: $color-3;
-    margin: 16px 0;
-    color: $color-text;
-    font-size: $text-lt;
-    @include flex($direction: column);
-    p {
-        padding: 2rem;
-      }
-  }
-  .fourth-home {
-    background-color:rgb(250, 248, 248);
-    font-size: $text-lt;
-    @include flex($direction: column);
-    margin: 16px 0;
-  }
-  .reviews{
-    &__card{
-      background-color: $color-3;
-      box-shadow: 1px 1px 5px 0 ;
-      margin: 1rem;
-      border-radius: .8rem;
-    }
-    &__name{
-      background-color: black;
-      color: white;
-      border-top-left-radius: .8rem;
-      border-top-right-radius: .8rem;
-      text-align: center;
-    }
-    &__stars{
-      color: orange;
-      text-align: center;
-    }
-  }
-  .presupuesto {
-    @include flex($direction: column);
+  &__name {
     background-color: black;
-    margin: 2rem auto;
-    margin-bottom: 0;
-    padding: 5rem;
+    color: white;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    text-align: center;
+  }
+  &__stars {
+    color: orange;
+    text-align: center;
+  }
+}
+.presupuesto {
+  @include flex($direction: column);
+  background-color: black;
+  margin: 2rem auto;
+  margin-bottom: 0;
+  padding: 5rem;
+  color: #fff;
+  p {
     color: #fff;
-    p{
-      color: #fff;
-      margin: 4rem;
-      font-size: 2em;
-    }
-    .line {
-        height: 2px;
-        min-width: 222px;
-        margin-top: 47px;
-        margin-bottom: 37px;
-        background-color: #fff;
-    }
-    .btn_send{
-      @extend .btn;
-      background-color: $color-primary;
-    }
-    h3 {
-        font-size: $titles-md;
-      }
-    }
+    margin: 4rem;
+    font-size: 2em;
+  }
+  .line {
+    height: 2px;
+    min-width: 222px;
+    margin-top: 47px;
+    margin-bottom: 37px;
+    background-color: #fff;
+  }
+  .btn_send {
+    @extend .btn;
+    background-color: $color-primary;
+  }
+  h3 {
+    font-size: $titles-md;
+  }
+}
