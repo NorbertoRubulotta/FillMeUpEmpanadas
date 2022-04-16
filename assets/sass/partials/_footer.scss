@@ -1,19 +1,18 @@
-
 .footer {
-    background-color: black;
-    color: $color-3;
-    font-size: $text-lt;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: $font-primary;
-    h4 {
-        font-size: 1.5em;
-        font-weight: bold;
-      }
-    p{
-        color: $color-3;
-    }
+  background-color: black;
+  color: $color-3;
+  font-size: $text-lt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: $font-primary;
+  h4 {
+    font-size: 1.5em;
+    font-weight: bold;
   }
+  p {
+    color: $color-3;
+  }
+}
