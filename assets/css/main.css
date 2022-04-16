@@ -144,6 +144,8 @@ form {
   .footer h4 {
     font-size: 1.5em;
     font-weight: bold; }
+  .footer p {
+    color: #fff; }
 
 .form {
   width: 100%;
