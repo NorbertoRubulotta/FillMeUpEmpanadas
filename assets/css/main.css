@@ -406,6 +406,9 @@ form {
   align-items: center;
   text-align: center; }
 
+.about-us__bio {
+  margin-bottom: 30px; }
+
 .faqs {
   display: flex;
   flex-direction: column;
