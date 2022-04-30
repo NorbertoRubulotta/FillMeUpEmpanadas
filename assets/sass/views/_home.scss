@@ -21,6 +21,29 @@
   height: 25%;
   margin: 1.6rem 0;
 }
+.btn {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  display: inline;
+  width: 120px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: $color-secondary;
+  background-color: transparent;
+  font-size: 1.3rem;
+  border-color: transparent;
+  transition: border-color 400ms ease, background-color 400ms ease,
+    color 400ms ease;
+  &:hover {
+    color: $color-text;
+    background-color: $color-secondary;
+    cursor: pointer;
+    transition: border-color 400ms ease, background-color 400ms ease,
+      color 400ms ease;
+  }
+}
 .second-home,
 .fifth-home {
   background-color: $color-3;
@@ -73,14 +96,14 @@
 .presupuesto {
   @include flex($direction: column);
   background-color: black;
-  margin: 2rem auto;
   margin-bottom: 0;
-  padding: 5rem;
+  padding: 3rem;
   color: #fff;
   p {
     color: #fff;
-    margin: 4rem;
+    margin: 2rem;
     font-size: 2em;
+    text-align: center;
   }
   .line {
     height: 2px;

@@ -47,15 +47,32 @@
   .menu__link {
     font-size: 1.5rem;
   }
-  .turn-right {
-    transform: rotate(10deg);
+
+  .presupuesto p{
+    margin: 4rem;
   }
-  .turn-left {
-    transform: rotate(-10deg);
+  details summary {
+    font-size: 2.5rem;
   }
-  .menu-list__item {
-    background-image: linear-gradient(180deg, #e4e4e4 80%, #fff 0);
+  details p{
+    font-size: 1.8rem;
   }
+  .bar-btn{
+    display: none;
+  }
+  .menu {
+    @include flex();
+    background: none;
+    top: 0;
+    width: auto;
+    position: unset;
+    &__item{
+      display: inline-block;
+    }
+  }
+  #check:checked ~ .menu {
+    height: 0;
+}
 }
 @media screen and (min-width: 1024px) {
   p {
@@ -85,6 +102,12 @@
     justify-content: space-evenly;
     align-content: center;
   }
+  .turn-right {
+    transform: rotate(10deg);
+  }
+  .turn-left {
+    transform: rotate(-10deg);
+  }
   .second-home,
   .fifth-home {
     h2 {
@@ -109,6 +132,9 @@
     grid-template-columns: repeat(2, 50%);
     justify-content: space-evenly;
     align-content: center;
+  }
+  .menu-list__item {
+    background-image: linear-gradient(180deg, #e4e4e4 80%, #fff 0);
   }
   @media screen and (min-width: 1480px) {
     .home {

@@ -10,9 +10,6 @@
     max-width: 90%;
     margin: 4rem;
   }
-  &__photo {
-    max-width: 500px;
-  }
   &__desc {
     @include flex($direction: column, $justify: flex-start);
     h4 {
@@ -22,6 +19,7 @@
     p {
       font-style: italic;
       font-weight: 500;
+      font-size: 1.8em;
     }
   }
 }

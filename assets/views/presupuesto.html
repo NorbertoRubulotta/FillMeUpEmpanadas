@@ -1,114 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Get a price quote for your catering event in ten minutes"
-    />
-    <meta
-      name="keywords"
-      content="RENT A FOOD TRUCK, FOODTRUCK, CATERINGS, EMPANADAS, ARGENINEAN FOOD"
-    />
-    <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <title>
-      Get a price quote | Fill Me Up! Empanadas - Get a price for your catering
-    </title>
-  </head>
 
-  <body>
-    <!-- Inicio del header -->
-    <header class="header">
-      <nav class="navbar container">
-        <div class="logo">
-          <a href="../../index.html"
-            ><img src="../img/logo2.svg" alt="Logo empresa"
-          /></a>
-        </div>
-        <ul class="menu flex-row">
-          <li class="menu__item">
-            <a href="../../index.html" class="menu__link">Home</a>
-          </li>
-          <li class="menu__item">
-            <a href="menu.html" class="menu__link">Menu</a>
-          </li>
-          <li class="menu__item">
-            <a href="sobreNosotros.html" class="menu__link">About us</a>
-          </li>
-          <li class="menu__item">
-            <a href="faq.html" class="menu__link">FAQ</a>
-          </li>
-          <li class="menu__item offer">
-            <a href="presupuesto.html" class="menu__link">Get an offer</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Fin del header -->
-    <!-- Inicio main -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get a price quote for your catering event in ten minutes" />
+  <meta name="keywords"
+    content="GET A QUOTE, BUDGET, OFFER, PRICE, RENT A FOOD TRUCK, FOODTRUCK, CATERINGS, EMPANADAS, ARGENINEAN FOOD" />
+  <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <script src="https://kit.fontawesome.com/717aaaebb4.js" crossorigin="anonymous"></script>
+  <title>
+    Get a price quote | Fill Me Up! Empanadas - Get a price for your catering
+  </title>
+</head>
 
-    <main>
-      <section class="divisor">
-        <div>
-          <h1>Presupuesto</h1>
-        </div>
-        <div>
-          <form action="" method="post" class="form">
-            <input type="text" name="Nombre" placeholder="Ingresa tu nombre" />
-            <input
-              type="email"
-              name="email"
-              placeholder="Ingresa tu email"
-              id=""
-            />
-            <input
-              type="number"
-              name="telefono"
-              placeholder="Ingresa tu número de teléfono"
-              id=""
-            />
-            <input
-              type="number"
-              name="personas"
-              placeholder="Ingresa la cantidad de personas"
-              id=""
-            />
+<body>
+  <!-- Inicio del header -->
+  <header class="header">
+    <nav class="navbar container-lg">
+      <div class="logo">
+        <a href="../../index.html"><img src="../img/logo2.svg" alt="Logo empresa" /></a>
+      </div>
+      <input type="checkbox" id="check">
+      <label for="check" class="bar-btn"> <i class="fa-solid fa-bars"></i></label>
+      <ul class="menu">
+        <li class="menu__item"> <a href="../../index.html" class="menu__link">Home</a></li>
+        <li class="menu__item"> <a href="menu.html" class="menu__link">Menu</a></li>
+        <li class="menu__item"><a href="sobreNosotros.html" class="menu__link">About us</a></li>
+        <li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
+        <li class="menu__item offer"> <a href="presupuesto.html" class="menu__link">Get an offer</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Fin del header -->
+  <!-- Inicio main -->
 
-            <textarea
-              name="informacion"
-              placeholder="Ingresa  la fecha, el lugar del evento y otra información que creas que deberiamos saber."
-              id=""
-            ></textarea>
-
-            <button type="submit" class="btn">Enviar</button>
-          </form>
-        </div>
-      </section>
-    </main>
-    <!-- Fin main -->
-    <!-- Inicio Footer -->
-    <footer class="footer flex-column">
+  <main>
+    <section class="presupuesto" id="quote">
       <div>
-        <h4>Follow us!</h4>
+        <h3>RENT A FOOD TRUCK</h3>
+        <div class="line"></div>
+        <p>Fill out the form and get a quote sent within 10 minutes.</p>
       </div>
-      <div>
-        <a href="https://www.facebook.com"
-          ><img src="../img/facebook-ico.ico" alt="Logo de facebook"
-        /></a>
-        <a href="https://www.instagram.com"
-          ><img src="../img/instagram-ico.ico" alt="Logo de instagram"
-        /></a>
-        <a href="https://www.whatsapp.com"
-          ><img src="../img/whatsapp-ico.ico" alt="Logo de whatsapp"
-        /></a>
+      <div class="formdiv">
+        <form class="form">
+          <input type="text" name="Name" placeholder="Enter your name" required />
+          <input type="email" name="Email" placeholder="Your Email" required />
+          <input type="number" name="Telephone" placeholder="Telephone number" />
+          <input type="number" name="People" placeholder="How many people" required />
+          <input type="text" name="Address" placeholder="Event address" required />
+          <input type="date" id="start" name="trip-start" min="2022-01-01" max="2030-12-31" required />
+
+          <textarea name="information" placeholder="Anything else that we should know?"></textarea>
+
+          <input type="submit" class="btn_send" value="Send" />
+        </form>
       </div>
-      <div class="footer__rights">
-        <p>Todos los derechos reservados 2022.</p>
-      </div>
-    </footer>
-    <!-- Fin footer -->
-  </body>
+    </section>
+
+  </main>
+  <!-- Fin main -->
+  <!-- Inicio Footer -->
+  <footer class="footer flex-column">
+    <div>
+      <h4>Follow us!</h4>
+    </div>
+    <div>
+      <a href="https://www.facebook.com"><img src="../img/facebook-ico.ico" alt="Logo de facebook" /></a>
+      <a href="https://www.instagram.com"><img src="../img/instagram-ico.ico" alt="Logo de instagram" /></a>
+      <a href="https://www.whatsapp.com"><img src="../img/whatsapp-ico.ico" alt="Logo de whatsapp" /></a>
+    </div>
+    <div class="footer__rights">
+      <p>Todos los derechos reservados 2022.</p>
+    </div>
+  </footer>
+  <!-- Fin footer -->
+</body>
+
 </html>

@@ -1,26 +1,4 @@
-.btn {
-  border-radius: 0.5rem;
-  padding: 1rem;
-  margin: 1rem auto;
-  display: inline;
-  width: 120px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: $color-secondary;
-  background-color: transparent;
-  font-size: 1.3rem;
-  border-color: transparent;
-  transition: border-color 400ms ease, background-color 400ms ease,
-    color 400ms ease;
-  &:hover {
-    color: $color-text;
-    background-color: $color-secondary;
-    cursor: pointer;
-    transition: border-color 400ms ease, background-color 400ms ease,
-      color 400ms ease;
-  }
-}
+
 .container-lg {
   margin-left: auto;
   margin-right: auto;
@@ -31,7 +9,10 @@
   margin-right: auto;
   max-width: 800px;
 }
-
+.column-reverse{
+  display: flex;
+  flex-direction: column-reverse;
+}
 @mixin flex(
   $display: flex,
   $direction: row,
